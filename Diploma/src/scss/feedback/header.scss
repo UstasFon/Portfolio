@@ -1,0 +1,58 @@
+@import "../vendors/extends";
+@import "../vendors/variables";
+@import "../fonts";
+
+.feedback {
+  padding: 94px 0 110px 0;
+
+  @media (max-width: 765px) {
+    width: 100%;
+    padding: 50px 5px 20px 5px;
+  }
+
+  &-contact__message {
+    padding-top: 75px;
+
+    @media (max-width: 765px) {
+      padding-top: 30px;
+    }
+  }
+
+  &-header {
+    max-width: 50%;
+
+    @media (max-width: 1205px) {
+      max-width: 100%;
+    }
+
+    &:after {
+      @extend %redLine;
+      margin: 0;
+
+      @media (max-width: 1205px) {
+        margin: 0 auto;
+      }
+    }
+
+    &__title {
+      @extend %titleFont;
+      font-size: 42px;
+
+      @media (max-width: 1205px) {
+        text-align: center;
+      }
+    }
+
+    &__text {
+      &.text {
+        padding: 34px 0px 52px 4px;
+        line-height: 27px;
+
+        @media (max-width: 1205px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+

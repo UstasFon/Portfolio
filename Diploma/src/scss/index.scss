@@ -1,0 +1,60 @@
+@import "./vendors/_extends";
+@import "./vendors/_variables";
+@import "./header/nav";
+@import "./header/intro";
+@import "./introducing/info";
+@import "./introducing/services";
+@import "./products/products";
+@import "./team/team";
+@import "delivered/dilivered";
+@import "feedback/header";
+@import "feedback/form";
+@import "feedback/contacts";
+@import "footer/footer";
+@import "burger/burger";
+@import "../../node_modules/plyr/src/sass/plyr";
+@import "../../node_modules/toastr/toastr";
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+};
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  min-width: 320px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+};
+
+.wrapper {
+  background-color: $headerColor;
+  padding-top: 30px;
+};
+
+.text{
+  @extend %mainText;
+}
+
+.button {
+  @extend %mainButton;
+}
+
+.wrong-validation {
+    border: 2px solid red;
+    transition: 500ms;
+};
+
+
+
+
+
+
+
+
+
+

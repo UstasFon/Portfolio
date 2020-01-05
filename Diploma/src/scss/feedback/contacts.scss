@@ -1,0 +1,49 @@
+@import "../vendors/extends";
+@import "../vendors/variables";
+@import "../fonts";
+
+.info {
+  &__title {
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 18px;
+    color: $mercury;
+
+    @media (max-width: 1205px) {
+      text-align: center;
+    }
+  }
+
+  &__address {
+    font-family: OpenSans-Regular, sans-serif;
+    font-size: 16px;
+    color: $mercury;
+    padding: 28px 0 18px 0;
+    line-height: 28px;
+
+    @media (max-width: 1205px) {
+      text-align: center;
+    }
+  }
+
+  &__mail {
+    font-size: 16px;
+    font-family: OpenSans-Regular, sans-serif;
+    color: $mercury;
+    padding-bottom: 25px;
+
+    @media (max-width: 1205px) {
+      text-align: center;
+    }
+  }
+
+  &__number {
+    font-size: 16px;
+    font-family: OpenSans-Regular, sans-serif;
+    color: $mercury;
+    padding-left: 3px;
+
+    @media (max-width: 1205px) {
+      text-align: center;
+    }
+  }
+}

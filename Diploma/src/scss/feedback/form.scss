@@ -1,0 +1,193 @@
+@import "../vendors/extends";
+@import "../vendors/variables";
+@import "../fonts";
+
+
+.feedback-contact {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1205px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__message {
+    max-width: 60%;
+
+    @media (max-width: 1205px) {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    margin-top: 76px;
+    width: 408px;
+    padding: 141px 41px 142px 78px;
+    background-color: $mineShaft;
+
+    @media (max-width: 1205px) {
+      width: 100%;
+      padding: 50px 41px 50px 78px;
+    }
+
+    @media (max-width: 992px) {
+      padding: 50px 40px 50px 40px;
+    }
+  }
+}
+
+.form {
+  max-width: 50%;
+
+  &__wrapper {
+
+    &_alert-nameInput {
+      @extend %wrongInputs;
+    }
+
+    &_alert-mailInput {
+      @extend %wrongInputs;
+    }
+
+    &_alert-messageInput {
+      @extend %wrongInputs
+    }
+
+    @media (max-width: 1205px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    &_name {
+      margin-right: 57px;
+
+     @media (max-width: 1205px) {
+      margin: 0 0 20px 0;
+       }
+    }
+  }
+
+  &__data {
+    display: flex;
+    justify-content: space-between;
+
+
+
+    @media (max-width: 1205px) {
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0px 5px 0 5px;
+      flex-direction: column;
+    }
+  }
+
+  &:first-child {
+    margin-right: 60px;
+
+    @media (max-width: 576px) {
+      margin: 0;
+    }
+  }
+
+
+  &__input {
+    @extend %formInput;
+    width: 338px;
+    height: 69px;
+    border-radius: 7px;
+
+    @media (max-width: 1205px) {
+      width: 100%;
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &.text {
+      font-size: 18px;
+      padding: 5px 5px 5px 54px;
+
+      @media (max-width: 576px) {
+        padding: 5px 5px 5px 5px;
+      }
+    }
+  }
+
+
+  &__letter {
+    @extend %formInput;
+    height: 249px;
+    width: 736px;
+    border-radius: 7px;
+    margin-top: 47px;
+    resize: none;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+
+    &.text {
+      font-size: 18px;
+      padding: 90px 5px 5px 54px;
+
+      @media (max-width: 768px) {
+        padding: 7px 10px 7px 10px;
+      }
+    }
+  }
+
+  &__button {
+    @extend %mainButton;
+    margin-top: 45px;
+    width: 749px;
+    height: 70px;
+    background-color: $mainRedColor;
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $hoverNavColor;
+    }
+
+    &_disabled {
+      opacity: 50%;
+      color: $QuarterSpanishWhite;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      &:hover {
+        opacity: 50%;
+        background-color: $mainRedColor;
+      }
+    }
+  }
+}
+
+.message__form {
+  max-width: 100%;
+
+}
+
+

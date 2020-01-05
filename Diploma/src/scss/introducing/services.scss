@@ -1,0 +1,131 @@
+@import "../vendors/_extends";
+@import "../vendors/_variables";
+
+.services {
+    max-width: 50%;
+    padding-left: 15px;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 5px;
+    }
+
+  &__item {
+    width: 50%;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    &_settings {
+      padding: 10px 0 0 0;
+    }
+
+    &_pencil {
+      padding: 10px 0 34px 18px;
+
+      @media (max-width: 768px) {
+        padding: 10px 0 34px 0;
+      }
+    }
+
+    &_diamond {
+      padding: 5px 0 30px 0;
+    }
+
+    &_truck {
+      padding: 3px 0 0 16px;
+
+      @media (max-width: 992px) {
+        padding: 10px 0 34px 0;
+      }
+    }
+  }
+
+  &-item {
+
+    &__text {
+      &.text{
+        padding: 5px 0 0 0;
+        line-height: 29px;
+
+        @media (max-width: 992px) {
+          text-align: center;
+        }
+      }
+    }
+
+    &__title {
+      @extend %titleFont;
+      color: $mainTextColor;
+      font-size: 24px;
+      padding-bottom: 5px;
+
+      @media (max-width: 992px) {
+        text-align: center;
+      }
+
+      &_settings:before {
+        margin-bottom: 23px;
+        display: block;
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: url(../icons/Settings.svg) bottom center;
+        background-size: 100%;
+
+        @media (max-width: 992px) {
+          margin: 0 auto;
+        }
+      }
+
+      &_pencil:before {
+        margin-bottom: 21px;
+        display: block;
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: url(../icons/Pencil.svg) bottom  no-repeat;
+        background-size: 100%;
+
+        @media (max-width: 992px) {
+          margin: 0 auto;
+        }
+      }
+
+      &_diamond:before {
+        margin-bottom: 30px;
+        display: block;
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: url(../icons/Diamond.svg) bottom  no-repeat;
+        background-size: 100%;
+
+        @media (max-width: 992px) {
+          margin: 0 auto;
+        }
+      }
+
+      &_truck:before {
+        margin-bottom: 33px;
+        display: block;
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: url(../icons/Truck.svg) bottom  no-repeat;
+        background-size: 100%;
+
+        @media (max-width: 992px) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

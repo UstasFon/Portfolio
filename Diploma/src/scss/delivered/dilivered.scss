@@ -1,0 +1,128 @@
+@import "../vendors/extends";
+@import "../vendors/variables";
+@import "../fonts";
+
+$bianca: #fdfcf8;
+
+.color-wrapper {
+  background-color: $QuarterSpanishWhite;
+}
+
+.delivered {
+  padding: 125px 0 123px 0;
+
+  @media (max-width: 768px) {
+    padding: 50px 0 50px 0;
+  }
+
+  &__title {
+    color: $bianca;
+    font-size: 42px;
+    font-family: OpenSans-Bold, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  &__text {
+    &.text {
+      padding: 24px 0 65px 0;
+      color: $bianca;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  &__mail {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 5px 12px;
+
+    &_invalid {
+      .delivered-mail__wrong-mail {
+        display: block;
+      }
+    }
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    @media (max-width: 375px) {
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  &-mail {
+
+    &__wrapper {
+      @media (max-width: 768px) {
+        padding-bottom: 30px;
+      }
+    }
+
+    &__email {
+      &.text {
+        padding: 5px 5px 5px 31px;
+
+        @media (max-width: 375px) {
+          padding: 5px 5px 5px 5px;
+        }
+      }
+
+      border-radius: 7px;
+      height: 78px;
+      width: 519px;
+      border: none;
+      outline: none;
+      background-color: $bianca;
+
+      @media (max-width: 768px) {
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 375px) {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__button {
+      border-radius: 7px;
+      margin-left: 23px;
+      background-color: $mainRedColor;
+      width: 215px;
+      height: 78px;
+      font-family: OpenSans-Bold, sans-serif;
+      font-size: 18px;
+      color: $bianca;
+
+      @media (max-width: 768px) {
+        margin: 0 auto;
+      }
+
+      @media (max-width: 375px) {
+        margin: 0 auto;
+        font-size: 15px;
+      }
+
+      &:hover {
+        background-color: $buttonHover;
+        cursor: pointer;
+      }
+    }
+
+    &__wrong-mail {
+      display: none;
+     @extend %wrongInputs;
+
+    }
+  }
+}
+

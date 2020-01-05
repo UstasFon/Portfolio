@@ -1,0 +1,64 @@
+@import "../vendors/_extends";
+@import "../vendors/_variables";
+
+.nav {
+  background-color: $navBackColor;
+
+  @media (max-width: 575px) {
+    display: block;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 139px;
+    z-index: -1;
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    @media (max-width: 575px) {
+      &.open {
+        height: 122px;
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media (max-width: 576px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    @extend %navItems;
+    text-align: center;
+    color: #ffff;
+    padding: 32px;
+    letter-spacing: 0.5px;
+    
+    @media (max-width: 576px) {
+      display: block;
+      text-align: center;
+      padding: 5px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__item:hover {
+    cursor: pointer;
+    background-color: $hoverNavColor;
+    transition: all 0.3s;
+  }
+};

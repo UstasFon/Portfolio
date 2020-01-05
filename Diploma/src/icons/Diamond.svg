@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.094" height="32.97" viewBox="0 0 40.094 32.97">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+        filter: url(#filter);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="807.562" y1="1058.03" x2="840.532" y2="1091" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <filter id="filter" x="804" y="1058.03" width="40.094" height="32.97" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#ff3b4a"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Diamond" class="cls-1" d="M844.081,1068.45a0.3,0.3,0,0,0-.031-0.08,0.718,0.718,0,0,0-.024-0.21l-4.119-9.69a0.722,0.722,0,0,0-.669-0.44h-30.4a0.719,0.719,0,0,0-.669.44l-4.122,9.69a0.8,0.8,0,0,0-.026.21,0.387,0.387,0,0,0-.029.08,0.163,0.163,0,0,1,.016.04,0.686,0.686,0,0,0,.163.43l19.32,21.83c0.015,0.02.044,0.02,0.06,0.04,0.053,0.04.1,0.08,0.158,0.12a0.207,0.207,0,0,0,.034.03,0.736,0.736,0,0,0,.582,0,0.091,0.091,0,0,0,.034-0.04,0.778,0.778,0,0,0,.156-0.11c0.018-.02.047-0.02,0.063-0.04l19.32-21.83a0.688,0.688,0,0,0,.165-0.43A0.163,0.163,0,0,1,844.081,1068.45Zm-15.116-8.98,3.553,8.26H815.557l3.556-8.26h9.852Zm3.543,9.7-8.473,19.3-8.468-19.3h16.941Zm-18.525,0,7.53,17.17-15.192-17.17h7.662Zm20.109,0h7.66l-15.193,17.17Zm8.173-1.44H834.1l-3.553-8.26h8.214Zm-32.946-8.26h8.22l-3.556,8.26H805.81Z" transform="translate(-804 -1058.03)"/>
+</svg>
