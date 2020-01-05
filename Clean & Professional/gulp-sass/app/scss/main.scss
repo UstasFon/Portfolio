@@ -1,0 +1,222 @@
+@import "./vendors/variables";
+@import "./vendors/extends";
+
+.header {
+	background-color: $headerColor;
+	&__logo{
+		text-align: center;
+		color: $textColor;
+		font-size: 60px;
+		@media (min-width: 768px) {
+			text-align: left;
+		}
+	}
+	&__nav {
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 20px;
+		padding-bottom: 30px;
+		@media (min-width: 768px) {
+			padding-top: 90px;
+			padding-bottom: 0px;
+		}
+	}
+	&__item {
+		display: block;
+		padding-left: 0px;
+		&_last {
+		& ::after {
+			content: "";
+		}
+		@media (min-width: 768px) {
+			display: inline;
+			padding-left: 10px;
+		}
+		}
+		@media (min-width: 768px) {
+			display: inline;
+			padding-left: 10px;
+			& ::after {
+				content: "--";
+				padding-left: 7px;
+			}
+		}	
+	}
+	&__link {
+		color: $textColor;
+	}
+}
+
+.main {
+	&__heading {
+		padding-top: 30px;
+		font-size: 40px;
+		text-align: center;
+		@media (min-width: 768px) {
+		text-align: left;
+		font-size: 60px;
+		padding-top: 70px;
+		}
+	}
+	&__item {
+		color: $mainItemColor;
+	}
+	&__solutions {
+		@extend %title;
+		padding-bottom: 45px;
+		border-bottom: 5px dotted $mainSolutionColor;
+		@media (min-width: 768px) {
+			text-align: left;
+			font-size: 60px;
+			padding-top: 0px;
+		}
+	}
+	&__text {
+		text-align: center;
+		color: $mainTextColor;
+		font-size: 34px;
+		padding-top: 20px;
+		&_bold{
+			font-weight: bold; 
+		}
+		@media (min-width: 768px) {
+			text-align: left;
+			padding-top: 40px;
+		}
+	}
+}
+
+.wrap {
+	margin-bottom: 10px;
+	&_last{ 
+		margin-bottom: 40px;
+	}
+}
+
+.ticket {
+	background-color: $ticketColor;
+	width: 280px;
+	padding: 20px;
+	box-shadow: 1px 1px 1px 1px $ticketShadowColor;
+	margin: 0 auto;
+	&__logo {
+		font-size: 40px;
+		color: $textColor;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	&__border {
+		border-top: 3.5px dotted $textColor;
+		padding-bottom: 30px;
+	}
+	&__text {
+		text-align: center;
+		color: $textColor;
+		font-size: 14px;
+	}
+	&__linck {
+		display: block;
+		text-align: center;
+		color: $textColor;
+		font-size: 18px;
+		padding: 10px 15px 10px 15px;
+		text-decoration: none;
+		width: 240px;
+		background-color: $buttonColor;
+		box-shadow: inset -1px 0px 13px 1px $shadowColor;
+		border: none;
+		transition: all 0.3s;
+		&:hover {
+			transition: all 0.3s;
+    		color: $buttonColor;
+    		background-color: #ffffff;
+    		box-shadow: inset 0px 0px 0px 0px $shadowColor;
+		}
+	}
+	
+}
+
+.testimonial {
+	padding-right: 20px;
+	border-bottom: 5px dotted $mainSolutionColor;
+	@media (min-width: 768px) {
+		border-right: 5px dotted $mainSolutionColor;
+		border-bottom:  none;
+	}
+	&__logo {
+		@extend %logo;
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	&__photo {
+		min-width: 85px;
+		height: 85px;
+		background-color: $testimonialsPhotoColor;	
+	}
+	&__description {
+		display: flex;
+		flex-direction: column;
+	}
+	&__perfomans {
+		@extend %text;
+		@media (min-width: 768px) {
+			padding-left: 30px;
+		}
+	}
+	&__data {
+		padding-left: 10px;
+		display: flex;
+		flex-direction: column;
+		@media (min-width: 768px) {
+			padding-left: 30px;
+		}
+	}
+	&__name {
+		font-size: 14px;
+		color: $mainTextColor;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
+	&__profesion {
+		font-size: 14px;
+		color: $ticketColor;
+	}
+}
+
+.project {
+	&__logo {
+	@extend	%logo;
+	}
+	&__intro {
+		@extend %title;
+		font-size: 24px;
+		@media (min-width: 768px) {
+			text-align: left;
+		}
+	}
+	&__text {
+		@extend %text;
+		padding-left: 0;
+	}
+	&__link {
+		padding-top: 20px;
+		display: block;
+		color: $mainItemColor;
+		font-size: 14px;
+		padding-bottom: 20px;
+	}
+}
+
+.separator {
+	margin-top: 20px;
+	border-bottom: 5px dotted $mainSolutionColor;
+}
+
+.copyright {
+	@extend %text;
+	padding-top: 20px;
+	padding-left: 0;
+}

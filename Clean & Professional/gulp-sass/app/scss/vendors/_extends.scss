@@ -1,0 +1,23 @@
+%logo {
+    font-size: 24px;
+	color: $mainTextColor;
+	text-align: center;
+	@media (min-width: 768px) {
+		text-align: left;
+    }
+}
+
+%text {
+    padding-left: 10px;
+	font-size: 14px;
+	color: $mainTextColor;
+	margin-bottom: 5px;
+	
+}
+
+%title {
+    padding-top: 5px;
+	font-size: 40px;
+	text-align: center;
+	color: $mainSolutionColor;
+}
